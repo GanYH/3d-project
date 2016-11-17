@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>css3颜色和透明度</title>
+	<style>
+	
+		/*
+		 * css3实现动画的两大属性
+		 * transition    过渡动画，需要触发条件
+		 * animation     逐帧动画，需要定义关键帧
+		 */
+	
+		/*
+		 * transition 过渡动画
+		 * 需要某个触发的条件 hover, click
+		 */
+		
+		html, body {
+			font-size: 12px;
+		}
+
+		.box {
+			width: 200px;
+			height: 200px;
+			color: black;
+			position: relative;
+			left: 0px;
+			opacity: 1;
+			background: red;
+		}
+		
+		.box:hover {
+			
+			/*opacity: 0;*/
+			/*transition: opacity 1s;*/
+			
+			/*left: 800px;*/
+			/*transition: left 0.5s;*/
+			
+			/*width: 400px;
+			/*transition: width 0.5s, left 1s, opacity 2s;*/
+			/*transition: all 1s ease 2s;*/
+			
+			height: 400px;
+			transition: all 1s, height 2s;
+
+			/*transition: all 1s linear;   /* 匀速 
+			
+			/*transition: all 1s ease;*/   /* 由快变慢 */ 
+			
+			/*transition: all 1s ease-in;   /* 加速 */
+			
+			/*transition: all 1s ease-out;   /* 减速 */
+			
+			/*transition: all 1s ease-in-out;  /* 先加后减 */
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="box">这是一个过渡动画</div>
+</body>
+</html>
